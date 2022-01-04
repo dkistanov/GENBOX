@@ -12,9 +12,11 @@ html(lang="ru-RU")
 
 		//- favicon block start
 		//- favicon block end
-
+		link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+		link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css")
 		link(rel="stylesheet" type='text/css' href="app/css/foundation.css")
-		link(rel="stylesheet" type='text/css' href="app/css/main.css")
+		block styles
+		
 		<!--[if lt IE 9]>
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
 		
@@ -25,5 +27,7 @@ html(lang="ru-RU")
 				block content
 				include ../section/footer
 			script(src="app/js/libs.min.js")
+			script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+			script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.js" integrity="sha512-9ekM9CHlUVUQX0M1UYcQKzCn7WaGRocDHddevyvDQ2UBVNha49jv1o8/+dEHmTZp5HZ3UAvunsD2ySb2BkqzwQ==" crossorigin="anonymous" referrerpolicy="no-referrer")
 			script(src="app/js/app.js")
 			block script

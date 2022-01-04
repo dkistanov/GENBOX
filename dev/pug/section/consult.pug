@@ -1,0 +1,53 @@
+section.consult 
+    .container 
+        .consult-wrp 
+            .consult__content
+                h2.consult__title.sect_title Получите консультацию специалиста по подбору дизельной электростанции
+                p.consult__desc.sect_desc Оставьте контактные данные или напишите в удобный мессенджер
+                .consult__contact 
+                    h3.contact__title.text_container  
+                        span Специалист 
+                        span свяжется
+                        span с вами и: 
+                    ul.contact__advan-list 
+                        li.contact__advan-item 
+                            .contact__advan-item-icon.fal.fa-cog
+                            p.contact__advan-item-desc.text_container 
+                                span Ответит на все вопросы 
+                                span технического характера
+                        li.contact__advan-item 
+                            .contact__advan-item-icon.fal.fa-chart-line 
+                            p.contact__advan-item-desc.text_container 
+                                span Подберет лучшее решение 
+                                span в соотношении цена/качество
+                        li.contact__advan-item 
+                            .contact__advan-item-icon.fal.fa-box-open
+                            p.contact__advan-item-desc.text_container 
+                                span Ответит на вопросы по доставке 
+                                span и наличию оборудования
+            form.consult__form(action="#")
+                .form-wrp
+                    h3.form__title Заполните форму ниже
+                    p.form__desc чтобы <b>обсудить детали проекта</b> в удобное для вас время
+                    label.form__label
+                        h4.form__label-title Введите ваш номер телефона:
+                        input.form__label-input(type="text" name="tel" placeholder="+7 (___) ___-__-__")
+                    .form__label
+                        h4.form__label-title Как с вами связаться?
+                        .form__social-checkbox-list
+                            label.form__label-social
+                                input.form__label-social-checkbox.form_checkbox(type="checkbox" name="social" value="telegram")
+                                figure.form__label-social-icon 
+                                    +icon('social-icon')
+                            label.form__label-social
+                                input.form__label-social-checkbox.form_checkbox(type="checkbox" name="social" value="whatsapp")
+                                figure.form__label-social-icon 
+                                    +icon('social-icon')
+                            label.form__label-social
+                                input.form__label-social-checkbox.form_checkbox(type="checkbox" name="social" value="viber")
+                                figure.form__label-social-icon 
+                                    +icon('social-icon')
+                    button.form__button.btn(type="submit") Обсудить детали проекта
+                    label.form__label.label_personal-data
+                        input.form__label-checkbox.form_checkbox(type="checkbox")
+                        span.form__label-text Вы соглашаетесь с <a>условиями обработки персональных данных</a>

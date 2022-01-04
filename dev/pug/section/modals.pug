@@ -1,0 +1,40 @@
+.modal.help-modal 
+    .modal-bg   
+    .modal__form
+        .modal__close
+            <i class="fas fa-times"></i>  
+        form.help__form.form_default.form_no-label-titles.form_center(action="#")
+            .form-wrp
+                h3.form__title Получить техподдержку
+                p.form__desc.text_container 
+                    span Без заполнения лишних полей
+                    span Можно сразу обсудить ваш случай
+                    span Работа техподдержки 24/7
+                label.form__label
+                    input.form__label-input(type="text" name="fio" placeholder="Укажите ФИО")
+                label.form__label
+                    input.form__label-input(type="text" name="tel" placeholder="Укажите телефон")
+                label.form__label
+                    textarea.form__label-input(name="desc" placeholder="Опишите в чем заключается поломка")
+                
+                button.form__button.btn(type="submit") Написать в техподдержку
+                label.form__label.label_personal-data
+                    input.form__label-checkbox.form_checkbox(type="checkbox")
+                    span.form__label-text Вы соглашаетесь с <a>условиями обработки персональных данных</a>
+.modal.diler-modal 
+    .modal-bg   
+    .modal__form
+        .modal__close
+            <i class="fas fa-times"></i> 
+        form.diler__form.form_default.form_no-label-titles(action="#")
+            .form-wrp
+                h3.form__title Получите дилерские условия
+                p.form__desc Заполните форму ниже, мы свяжемся с вами, чтобы уточнить детали
+                label.form__label
+                    input.form__label-input(type="email" name="fio" placeholder="Укажите почту")
+                label.form__label
+                    input.form__label-input(type="text" name="tel" placeholder="Укажите телефон")
+                button.form__button.btn(type="submit") Получить дилерские условия
+                label.form__label.label_personal-data
+                    input.form__label-checkbox.form_checkbox(type="checkbox")
+                    span.form__label-text Вы соглашаетесь с <a>условиями обработки персональных данных</a>

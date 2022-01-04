@@ -1,0 +1,17 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Деталка'
+
+block content
+	include ../section/catalog-detail/advan
+	include ../section/catalog-detail/desc
+	include ../section/catalog-detail/pref
+	include ../section/catalog-detail/engine
+	include ../section/catalog-detail/unic
+	include ../section/catalog-detail/item-prod
+	include ../section/catalog-detail/spare-list
+	include ../section/catalog-detail/arrangement
+	include ../section/catalog-detail/options
+block styles 
+	link(rel="stylesheet" type='text/css' href="app/css/catalog.css")

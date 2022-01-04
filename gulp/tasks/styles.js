@@ -1,6 +1,6 @@
 module.exports = function () {
     $.gulp.task('styles:build', () => {
-        return $.gulp.src('./dev/static/stylus/main.styl')
+        return $.gulp.src('./dev/static/stylus/*.styl')
             .pipe($.gp.stylus({
                 'include css': true
             }))
@@ -13,7 +13,7 @@ module.exports = function () {
     });
 
     $.gulp.task('styles:dev', () => {
-        return $.gulp.src('./dev/static/stylus/main.styl')
+        return $.gulp.src('./dev/static/stylus/*.styl')
             .pipe($.gp.sourcemaps.init())
             .pipe($.gp.stylus({
                 'include css': true

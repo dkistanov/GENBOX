@@ -1,0 +1,78 @@
+.hero {
+    background: url('../img/content/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 280px;
+    color: #fff
+}
+.hero__title {
+    max-width: 998px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.hero__desc {
+    max-width: 542px;
+    padding-bottom: 42px;
+}
+
+.hero__title,.hero__desc {
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+.hero__content {
+    padding: 0 80px 80px;
+    position: relative;
+}
+
+.hero__advan {
+    padding: 0 150px;
+}
+
+.hero__content:after {content: "";width: 580px;height: 580px;background: url('../img/content/hero-ellipse.png');background-size: cover;position: absolute;top: -114px;left: -35px;}
+
+.hero__button {
+    position: relative;
+    z-index: 2;
+}
+
+figure {
+    margin: 0;
+}
+
+.hero__advan-list {
+    display: flex;
+}
+
+.hero__advan-item {
+    margin-right: 5%;
+    display: flex;
+}
+
+.hero__advan-item__img {
+    flex-shrink: 0;
+    max-width: 45px;
+    margin-right: 20px;
+}
+
+.hero__advan-item__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.75;
+}
+
+.hero__advan-item__text b {
+    font-weight: 600;
+}
+
+.hero__advan-item:last-child {
+    margin-right: 0;
+}
+
+.hero {
+    padding-bottom: 90px;
+}
